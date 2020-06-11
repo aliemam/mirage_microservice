@@ -20,7 +20,7 @@
     "repositories": [
         {
             "type": "git",
-            "url": "https://github.com/aliemam/mirage_microservice.git"
+            "url": "https://github.com/aliemam/mirage_core.git"
         }
     ],
     "require-dev": {
