@@ -21,7 +21,7 @@
         {
             "type": "package",
             "package": {
-                "name": "aliemam/miarge_core",
+                "name": "aliemam/mirage_core",
                 "version": "master",
                 "source": {
                     "url": "https://github.com/aliemam/mirage_core.git",
