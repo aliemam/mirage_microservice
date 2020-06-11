@@ -17,6 +17,12 @@
         "process-timeout": 1800,
         "vendor-dir": "vendor"
     },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/aliemam/mirage_microservice.git"
+        }
+    ],
     "require-dev": {
         "squizlabs/php_codesniffer": "3.*",
         "phpunit/phpunit": "^9"
