@@ -1,5 +1,5 @@
 <?php
-require_once(__DIR__ . '/../vendor/aliem/mirage/src/Mirage.php');
+require_once(__DIR__ . '/../vendor/aliemam/mirage/src/Mirage.php');
 
 // init mirage framework
 Mirage::boot();

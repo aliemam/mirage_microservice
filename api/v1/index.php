@@ -26,7 +26,7 @@ $time = microtime(true);
 $mem = memory_get_usage();
 
 try {
-    $app = require_once(__DIR__ . '/../bootstrap/preload.php');
+    $app = require_once(__DIR__ . '/../../bootstrap/preload.php');
     $app->run();
 } catch (\Exception $e) {
     \Mirage\Libs\L::e($e->getMessage());
