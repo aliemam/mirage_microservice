@@ -30,7 +30,7 @@ return [
      */
     'uuid' => 'fake_uuid',
     'name' => 'mirage',
-    'base_url' => 'http://localhost/',
+    'base_url' => 'http://mirage.local/',
     'default_timezone' => 'Europe/Helsinki',
     'lang' => 'en',
     'callback_lang' => 'en',
@@ -48,12 +48,12 @@ return [
     /**
      * resources
      */
-    'storage_url' => 'http://localhost/storage/',
-    'image_url' => 'http://localhost/storage/image/',
-    'audio_url' => 'http://localhost/storage/audio/',
-    'application_url' => 'http://localhost/storage/application/',
-    'text_url' => 'http://localhost/storage/text/',
-    'video_url' => 'http://localhost/storage/video/',
+    'storage_url' => 'http://mirage.local/storage/',
+    'image_url' => 'http://mirage.local/storage/image/',
+    'audio_url' => 'http://mirage.local/storage/audio/',
+    'application_url' => 'http://mirage.local/storage/application/',
+    'text_url' => 'http://mirage.local/storage/text/',
+    'video_url' => 'http://mirage.local/storage/video/',
     'max_image_upload_size' => 5000000, //5MB,
 
     /**

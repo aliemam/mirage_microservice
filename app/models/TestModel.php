@@ -7,7 +7,7 @@
  * Time: 1:00 PM
  */
 
-namespace App\Models\DB;
+namespace App\Model;
 
 class TestModel extends \Mirage\App\Model
 {

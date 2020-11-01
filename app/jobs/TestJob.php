@@ -7,7 +7,7 @@
 //  * Time: 3:52 AM
 //  */
 
-// namespace App\Jobs;
+// namespace App\Job;
 
 // use Mirage\AsyncTask;
 
