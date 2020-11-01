@@ -29,11 +29,12 @@ try {
     $app = require_once(__DIR__ . '/../../bootstrap/preload.php');
     $app->run();
 } catch (\Exception $e) {
-    \Mirage\Libs\L::e($e->getMessage());
-    \Mirage\Libs\L::e($e->getTraceAsString());
-    \Mirage\Http\Response::sendError($e->getMessage());
+    echo $e->getMessage();
+//    \Mirage\Libs\L::e($e->getMessage());
+//    \Mirage\Libs\L::e($e->getTraceAsString());
+//    \Mirage\Http\Response::sendError($e->getMessage());
 }
 
-\Mirage\Libs\L::i('MEMORY USAGE: ' . (memory_get_usage() - $mem) / (1024 * 1024)
-    . ' - SECONDS: ' . (microtime(true) - $time));
-\Mirage\Libs\L::i('END OF REQUEST');
+//\Mirage\Libs\L::i('MEMORY USAGE: ' . (memory_get_usage() - $mem) / (1024 * 1024)
+//    . ' - SECONDS: ' . (microtime(true) - $time));
+//\Mirage\Libs\L::i('END OF REQUEST');

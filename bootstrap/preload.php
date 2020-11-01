@@ -1,15 +1,16 @@
 <?php
-require_once(__DIR__ . '/../vendor/aliemam/mirage/src/Mirage.php');
+require_once(__DIR__ . '/../vendor/aliemam/mirage_core/src/Core.php');
 
 // init mirage framework
-Mirage::boot();
-
-// create logger with prefix "api"
-\Mirage\Libs\Logger::create("api");
+\Mirage\Core::boot();
 
 // create micro app
-$app = Mirage::getRestApp();
+$app = \Mirage\Core::getRestApp();
 $app->bootFrameworkDefaults();
 $app->bootAppDefaults();
 
-return $app;
+// create logger with prefix "api"
+\Mirage\Libs\Config::create();
+\Mirage\Libs\Logger::create("api");
+//TODO: Cache should be rewritten
+//\Mirage\Libs\Cache::create();

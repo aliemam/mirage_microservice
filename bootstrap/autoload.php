@@ -17,8 +17,8 @@ return [
         'App\Model' => APP_DIR . '/models/',
         'App\Route' => APP_DIR . '/routes/',
         'App\Lib' => APP_DIR . '/libs/',
-        'App\Constant' => ROOT_DIR . '/constants/',
-        'Bootstrap' => ROOT_DIR . '/bootstrap',
+        'App\Constant' => APP_DIR . '/constants/',
+        'Bootstrap' => MIRAGE_APP_DIR . '/bootstrap',
     ],
     'Dirs' => [],
     'Files' => []

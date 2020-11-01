@@ -2,6 +2,7 @@
 .vscode
 composer.lock
 /cache/
+/log/*.log
 /config/development/
 /vendor/
 

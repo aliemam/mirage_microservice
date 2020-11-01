@@ -2,18 +2,16 @@
 
 namespace App\Routes;
 
+use Mirage\Libs\Route;
+
 class TestRoute extends \Mirage\App\RoutesCollection
 {
     public function __construct()
     {
-        $this->setCollectionHandler('App\Controllers\TestController')
-            ->setCollectionPrefix('/test')
-            ->setCollectionRoutes([
-                [
-                    'path' => '/test',
-                    'method' => 'get',
-                    'action' => 'test',
-                ],
-            ]);
+        $this->setHandler('App\Controllers\TestController', false);
+        $this->setPrefix('/test');
+        $this->setRoutes([
+            new Route('/', 'get', 'test')
+        ]);
     }
 }
