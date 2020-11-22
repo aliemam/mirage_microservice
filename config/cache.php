@@ -23,21 +23,29 @@
  */
 
 return [
-    'driver' => 'redis', // could be redis, memcached, ... (supported by Phalcon cache drivers)
-    'redis' => [
+    'cache1' => [
+        'adapter' => 'redis',
+        'serializer' => 'json',
+        'lifetime' => 31536000,
+        'prefix' => '_mirage_',
         'host' => '127.0.0.1',
-        'prefix' => ':mirage:',
-        'persistent' => FALSE,
         'port' => 6379,
-        'index' => 0,
-        'statsKey' => '_PHCR',
+        'index' => 1,
+        'persistent' => TRUE
     ],
-    'memcached' => [
-        'host' => '127.0.0.1',
-        'prefix' => ':mirage:',
-        'persistent' => FALSE,
-        'port' => 11211,
-        'weight' => '1',
-        'statsKey' => '_PHCR',
-    ]
+//    'cache2' => [
+//        'adapter' => 'memcached',
+//        'serializer' => 'json',
+//        'prefix' => '_mirage_',
+//        'host' => '127.0.0.1',
+//        'persistentId' => '_mcid_',
+//        'lifetime' => 31536000,
+//        'servers' => [
+//            0 => [
+//                'host' => '127.0.0.1',
+//                'port' => 11211,
+//                'weight' => 1,
+//            ]
+//        ],
+//    ]
 ];
