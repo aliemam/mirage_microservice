@@ -6,10 +6,9 @@ try {
     \Mirage\Core::boot();
 // create logger with prefix "api"
     \Mirage\Libs\Config::boot();
-    \Mirage\Libs\Logger::getInstance("api");
-    \Mirage\Libs\Logger::setDefaultLogger("api");
+    \Mirage\Libs\Logger::boot();
     \Mirage\Libs\Cache::boot();
-    \Mirage\Libs\Cache::setDefaultCache('cache1');
+
 } catch (ErrorException $e) {
     die("BOOT ERROR: " . $e->getMessage());
 }

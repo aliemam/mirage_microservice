@@ -28,22 +28,13 @@ return [
     /**
      * app identity
      */
+    'env' => 'dev', // dev or prod
     'uuid' => 'fake_uuid',
     'name' => 'mirage',
     'base_url' => 'http://mirage.local/',
     'default_timezone' => 'Europe/Helsinki',
     'lang' => 'en',
     'callback_lang' => 'en',
-
-    /**
-     * logging and caching
-     */
-    'env' => 'dev',
-    'debug_mode' => true,
-    'log_mode' => 'complete',
-    'log_max_length' => 1500,
-    'enable_cache' => false,
-    'log_in_cli' => false,
 
     /**
      * resources

@@ -23,30 +23,21 @@
  */
 
 return [
-    'm_rd' => [
-        'adapter' => 'redis',
-        'serializer' => 'json',
-        'lifetime' => 31536000,
-        'prefix' => '_mirage_',
-        'host' => '127.0.0.1',
-        'port' => 6379,
-        'index' => 1,
-        'persistent' => TRUE,
-        'enable' => TRUE
-    ],
-//    'm_mem' => [
-//        'adapter' => 'memcached',
-//        'serializer' => 'json',
-//        'prefix' => '_mirage_',
-//        'host' => '127.0.0.1',
-//        'persistentId' => '_mcid_',
-//        'lifetime' => 31536000,
-//        'servers' => [
-//            0 => [
-//                'host' => '127.0.0.1',
-//                'port' => 11211,
-//                'weight' => 1,
-//            ]
-//        ],
-//    ]
+    'mlog' => [
+//        This is a path to save log file in the format of {logger_name}_{Y-m-d}.log
+        'path' => LOG_DIR,
+
+//        This variable can be used when you want to just log a maximum char in each logger call.
+//        if it was null, logger will log complete message.
+        'max_length' => null,
+
+//        This variable can be used when you want to add more data to all messages.
+//        At the end each massage will be in this format:
+//        "[$time][$type] [$tag][$ip][$route] $prefix$message"
+//        If $tag was provided by developer. developer can track that string in logs.
+        'tag' => 'NT',
+
+//        This is Phalcon\Logger log level constant
+        'level' => \Phalcon\Logger::DEBUG
+    ]
 ];
