@@ -18,7 +18,8 @@
         "vendor-dir": "vendor"
     },
     "require": {
-        "aliemam/mirage_core": "dev-master"
+        "aliemam/mirage_core": "dev-master",
+      "ext-json": "*"
     },
     "scripts": {
         "test": "phpunit",

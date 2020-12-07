@@ -17,7 +17,7 @@
 */
 
 /**
- * This is part of Mirage Micro Application
+ * This is part of Mirage Micro Service Application
  *
  * @author Ali Emamhadi <aliemamhadi@gmail.com>
  */
@@ -29,13 +29,13 @@ $mem = memory_get_usage();
 try {
     $app = \Mirage\Core::getRestApp();
     $app->run();
+} catch (\Mirage\Exceptions\HttpException $e) {
+    \Mirage\Libs\L::e($e->getMessage());
+    $e->getResponse()->sendResponse();
 } catch (\Exception $e) {
     \Mirage\Libs\L::e($e->getMessage());
     \Mirage\Libs\L::e($e->getTraceAsString());
-
-//    \Mirage\Http\Response::create(null, '503',$e->getMessage())->sendResponse();
 }
 
-\Mirage\Libs\L::i('MEMORY USAGE: ' . (memory_get_usage() - $mem) / (1024 * 1024)
-    . ' - SECONDS: ' . (microtime(true) - $time));
-\Mirage\Libs\L::i('END OF REQUEST');
+\Mirage\Libs\L::d('M: ' . (memory_get_usage() - $mem) / (1024 * 1024) . ' - S: ' . (microtime(true) - $time));
+\Mirage\Libs\L::d('[Request ENDS] ' . $_SERVER['REQUEST_URI']);

@@ -17,7 +17,7 @@
 */
 
 /**
- * This is part of Mirage Micro Application
+ * This is part of Mirage Micro Service Application
  *
  * @author Ali Emamhadi <aliemamhadi@gmail.com>
  */
@@ -38,6 +38,12 @@ return [
         'tag' => 'NT',
 
 //        This is Phalcon\Logger log level constant
+        'level' => \Phalcon\Logger::DEBUG
+    ],
+    'test' => [
+        'path' => LOG_DIR,
+        'max_length' => null,
+        'tag' => 'TEST',
         'level' => \Phalcon\Logger::DEBUG
     ]
 ];
