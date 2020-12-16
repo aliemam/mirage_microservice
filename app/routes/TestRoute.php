@@ -22,7 +22,7 @@
  * @author Ali Emamhadi <aliemamhadi@gmail.com>
  */
 
-namespace App\Route;
+namespace App\Routes;
 
 use App\Controller\TestController;
 use Mirage\Libs\Route;

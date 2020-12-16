@@ -27,12 +27,14 @@ return [
     'Namespaces' => [
         // app
         'App' => APP_DIR,
-        'App\Constant' => APP_DIR . '/constants/',
-        'App\Controller' => APP_DIR . '/controllers/',
-        'App\Lib' => APP_DIR . '/libs/',
-        'App\Middleware' => APP_DIR . '/middleware/',
-        'App\Model' => APP_DIR . '/models/',
-        'App\Route' => APP_DIR . '/routes/',
+        'App\Constants' => APP_DIR . '/constants/',
+        'App\Controllers' => APP_DIR . '/controllers/',
+        'App\Interfaces' => APP_DIR . '/interfaces/',
+        'App\Libs' => APP_DIR . '/libs/',
+        'App\Middlewares' => APP_DIR . '/middleware/',
+        'App\Models' => APP_DIR . '/models/',
+        'App\Routes' => APP_DIR . '/routes/',
+        'App\Traits' => APP_DIR . '/traits/',
         'Bootstrap' => MIRAGE_APP_DIR . '/bootstrap',
     ],
 

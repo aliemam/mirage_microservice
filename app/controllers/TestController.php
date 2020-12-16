@@ -22,7 +22,7 @@
  * @author Ali Emamhadi <aliemamhadi@gmail.com>
  */
 
-namespace App\Controller;
+namespace App\Controllers;
 
 use Mirage\Http\Response;
 use Mirage\Libs\L;

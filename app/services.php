@@ -23,7 +23,7 @@
  */
 
 use Mirage\Libs\Config;
-use Mirage\Constants\Services;
+use App\Constants\Services;
 use Phalcon\Db\Adapter\Pdo\Mysql;
 
 /**

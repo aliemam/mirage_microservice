@@ -22,7 +22,7 @@
  * @author Ali Emamhadi <aliemamhadi@gmail.com>
  */
 
-namespace App\Model;
+namespace App\Models;
 
 final class TestModel extends \Mirage\App\Model
 {
