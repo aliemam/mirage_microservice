@@ -22,26 +22,14 @@
  * @author Ali Emamhadi <aliemamhadi@gmail.com>
  */
 
-return [
-    // All namespaces should be defined here to access from other parts of the app.
-    'Namespaces' => [
-        // app
-        'App' => APP_DIR,
-        'App\Constants' => APP_DIR . '/constants/',
-        'App\Controllers' => APP_DIR . '/controllers/',
-        'App\Interfaces' => APP_DIR . '/interfaces/',
-        'App\Libs' => APP_DIR . '/libs/',
-        'App\Middlewares' => APP_DIR . '/middleware/',
-        'App\Models' => APP_DIR . '/models/',
-        'App\Queues' => APP_DIR . '/queues/',
-        'App\Routes' => APP_DIR . '/routes/',
-        'App\Traits' => APP_DIR . '/traits/',
-        'Bootstrap' => MIRAGE_APP_DIR . '/bootstrap',
-    ],
+namespace App\Queues;
 
-    // All the PHP files under each directory which is defined here can be accessed from other parts of the app.
-    'Dirs' => [],
+use Mirage\Interfaces\BeanstalkInterface;
 
-    // All the PHP files which are defined here can be accessed from other parts of the app.
-    'Files' => []
-];
+class TestQueue implements BeanstalkInterface
+{
+    public function run()
+    {
+
+    }
+}
