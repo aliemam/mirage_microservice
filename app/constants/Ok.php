@@ -1,7 +1,7 @@
 <?php
 /*
   +------------------------------------------------------------------------+
-  | Mirage Micro Application                                               |
+  | Mirage Framework                                                       |
   +------------------------------------------------------------------------+
   | Copyright (c) 2018-2020                                                |
   +------------------------------------------------------------------------+
@@ -17,29 +17,14 @@
 */
 
 /**
- * This is part of Mirage Micro Service Application
+ * This is part of Mirage Micro Framework
  *
  * @author Ali Emamhadi <aliemamhadi@gmail.com>
  */
 
-namespace App\Routes;
+namespace App\Constants;
 
-use App\Controllers\TestController;
-use Mirage\Libs\Route;
-
-class TestRoute extends \Mirage\App\RoutesCollection
+class Ok
 {
-    public function __construct()
-    {
-        // setting handler for the route, which should be a class extended from \Mirage\App\Controller object.
-        $this->setHandler(new TestController());
-
-        // prefix of the route
-        $this->setPrefix('/test');
-
-        // each value should be class of \Mirage\Libs\Route object.
-        $this->setRoutes([
-            new Route('/', 'get', 'test')
-        ]);
-    }
+    const SUCCESS = 's00000-200';
 }

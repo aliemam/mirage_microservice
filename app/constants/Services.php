@@ -1,7 +1,7 @@
 <?php
 /*
   +------------------------------------------------------------------------+
-  | Mirage Micro Application                                               |
+  | Mirage Framework                                                       |
   +------------------------------------------------------------------------+
   | Copyright (c) 2018-2020                                                |
   +------------------------------------------------------------------------+
@@ -17,29 +17,30 @@
 */
 
 /**
- * This is part of Mirage Micro Service Application
+ * This is part of Mirage Micro Framework
  *
  * @author Ali Emamhadi <aliemamhadi@gmail.com>
  */
 
-namespace App\Routes;
+namespace App\Constants;
 
-use App\Controllers\TestController;
-use Mirage\Libs\Route;
-
-class TestRoute extends \Mirage\App\RoutesCollection
+class Services
 {
-    public function __construct()
-    {
-        // setting handler for the route, which should be a class extended from \Mirage\App\Controller object.
-        $this->setHandler(new TestController());
-
-        // prefix of the route
-        $this->setPrefix('/test');
-
-        // each value should be class of \Mirage\Libs\Route object.
-        $this->setRoutes([
-            new Route('/', 'get', 'test')
-        ]);
-    }
+    const SERVICE = 'service';
+    const MICRO = 'micro';
+    const DB = 'db';
+    const DB_ARCHIVE = 'archive_db';
+    const MODELS_CACHE = 'modelsCache';
+    const MODELS_MANAGER = 'modelsManager';
+    const REQUEST = 'request';
+    const RESPONSE = 'response';
+    const EVENTS_MANAGER = 'eventsManager';
+    const CACHE = 'cache';
+    const RANDOM = 'random';
+    const PROFILER_DB = 'profiler_db';
+    const SECURITY = 'security';
+    const QUEUE = 'queue';
+    const ELASTIC = 'elastic';
+    const PROFILE = 'profile';
+    const TRANSACTION = 'TRANSACTION';
 }
