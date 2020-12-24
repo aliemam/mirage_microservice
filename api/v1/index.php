@@ -38,4 +38,4 @@ try {
 }
 
 \Mirage\Libs\L::d('M: ' . (memory_get_usage() - $mem) / (1024 * 1024) . ' - S: ' . (microtime(true) - $time));
-\Mirage\Libs\L::d('[Request ENDS] ' . $_SERVER['REQUEST_URI']);
+\Mirage\Libs\L::d('[Request ENDS]');
