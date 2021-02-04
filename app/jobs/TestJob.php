@@ -24,9 +24,7 @@
 
 namespace App\Jobs;
 
-use Mirage\Libs\L;
-
-class TestJob extends \Mirage\App\Job
+class TestJob extends \Mirage\App\Job implements \Mirage\Interfaces\JobInterface
 {
     public function task($data): array
     {

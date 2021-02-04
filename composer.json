@@ -18,8 +18,7 @@
     "vendor-dir": "vendor"
   },
   "require": {
-    "aliemam/mirage_core": "*",
-    "ext-json": "*"
+    "aliemam/mirage_core": "*"
   },
   "scripts": {
     "test": "phpunit",
