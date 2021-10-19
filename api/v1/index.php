@@ -27,6 +27,10 @@ $time = microtime(true);
 $mem = memory_get_usage();
 
 try {
+    if ($_SERVER['REQUEST_METHOD'] === 'OPTION') {
+        \Mirage\Libs\Logger::$enable = false;
+    }
+
     $app = \Mirage\Core::getRestApp();
     $app->run();
 } catch (\Mirage\Exceptions\HttpException $e) {
